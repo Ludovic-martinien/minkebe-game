@@ -1,0 +1,19 @@
+{
+  "name": "Minkébé — Aventure, style et survie",
+  "short_name": "Minkébé",
+  "description": "Jeu d'aventure, de style et de survie dans la forêt équatoriale du Gabon. © MVE ZOGO LUDOVIC-CRÉATIONS",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#061008",
+  "theme_color": "#061008",
+  "lang": "fr",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

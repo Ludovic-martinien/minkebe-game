@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #061008;
+}
+
+canvas {
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+kbd {
+  font-family: inherit;
+}
+
+@keyframes trailer-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.trailer-reveal {
+  animation: trailer-reveal 650ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trailer-reveal {
+    animation: none;
+  }
+}
+
+/* Tactile : pas de sélection ni de zoom par double-tap sur le jeu */
+body {
+  touch-action: none;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-height: 430px) and (orientation: landscape) {
+  .mobile-controls-panel {
+    grid-template-columns: repeat(5, min-content);
+    gap: 0.25rem;
+  }
+
+  .touch-action-button {
+    width: 2.55rem !important;
+    height: 2.55rem !important;
+  }
+
+  .touch-fire-button {
+    width: 2.85rem !important;
+    height: 2.85rem !important;
+  }
+
+  .mobile-time-card {
+    display: none;
+  }
+}
